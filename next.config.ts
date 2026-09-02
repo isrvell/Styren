@@ -1,13 +1,7 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: false,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  serverExternalPackages: ["bcryptjs"],
-} as NextConfig;
+const nextConfig: NextConfig = {
+  serverExternalPackages: ["bcryptjs", "nodemailer"],
+};
 
 export default nextConfig;
